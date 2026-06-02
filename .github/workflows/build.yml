@@ -33,6 +33,7 @@ jobs:
       run: |
         mkdir -p build/Build/Products/Release/GatekeeperBypass.app/Contents/Resources
         cp icon/icon.icns build/Build/Products/Release/GatekeeperBypass.app/Contents/Resources/AppIcon.icns
+        /usr/libexec/PlistBuddy -c "Add :CFBundleIconFile string AppIcon" build/Build/Products/Release/GatekeeperBypass.app/Contents/Info.plist || \
         /usr/libexec/PlistBuddy -c "Set :CFBundleIconFile AppIcon" build/Build/Products/Release/GatekeeperBypass.app/Contents/Info.plist
 
     - name: Zip app
