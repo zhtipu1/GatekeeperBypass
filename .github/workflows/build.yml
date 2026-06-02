@@ -18,10 +18,10 @@ jobs:
     - name: Select Xcode
       run: sudo xcode-select -s /Applications/Xcode_15.4.app
 
-    - name: Copy icon into asset catalog
+    - name: Copy icon
       run: |
         mkdir -p GatekeeperBypass/Assets.xcassets/AppIcon.appiconset
-        cp icons/icon.icns GatekeeperBypass/Assets.xcassets/AppIcon.appiconset/icon.icns
+        cp icon/icon.icns GatekeeperBypass/Assets.xcassets/AppIcon.appiconset/icon.icns
         cat > GatekeeperBypass/Assets.xcassets/AppIcon.appiconset/Contents.json << 'EOF'
         {
           "images": [
