@@ -23,7 +23,7 @@ struct ContentView: View {
                 VStack(spacing: 10) {
                     Image(systemName: isTargeted ? "lock.open.fill" : "lock.shield")
                         .font(.system(size: 36))
-                        .foregroundStyle(isTargeted ? .accent : .secondary)
+                        .foregroundStyle(isTargeted ? Color.accentColor : Color.secondary)
                         .animation(.easeInOut(duration: 0.15), value: isTargeted)
                     Text("Drop .app here to open")
                         .font(.system(size: 14, weight: .medium))
