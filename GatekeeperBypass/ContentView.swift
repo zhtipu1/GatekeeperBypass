@@ -220,7 +220,7 @@ struct AboutView: View {
                         .font(.system(size: 12))
                         .foregroundStyle(.secondary)
                 }
-                Text("Drop any .app file onto the window to strip\nthe Gatekeeper quarantine flag and open it.\nNo terminal needed.")
+                Text("Drop any .app file onto the window to strip \n the Gatekeeper quarantine flag and open it. \n No terminal needed.")
                     .font(.system(size: 12))
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
@@ -233,7 +233,7 @@ struct AboutView: View {
                     Text("Zahidul Haque Tipu")
                         .font(.system(size: 14, weight: .semibold))
                 }
-                Text("2025 Zahidul Haque Tipu. All rights reserved.")
+                Text("All rights reserved.")
                     .font(.system(size: 10))
                     .foregroundStyle(.secondary)
             }
